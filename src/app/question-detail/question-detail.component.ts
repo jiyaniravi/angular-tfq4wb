@@ -64,9 +64,6 @@ export class QuestionDetailComponent{
     if(this.globals.quizArray.length-1 > this.currentQuestionIndex){
       this.router.navigate(['/question/', ++this.currentQuestionIndex]);
     }else{
-      for(var i=0; i< this.globals.answerArray; i++){
-        console.log(this.globals.answerArray[i]);
-      }
       this.router.navigate(['/result']);
     }
   };
