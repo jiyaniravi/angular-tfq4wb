@@ -8,7 +8,7 @@ const routes: Routes = [{path: '', component: QuizComponent},
                         {path: 'question/:id', component: QuestionDetailComponent},
                         {path: 'result', component: ResultDetailComponent}];
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {onSameUrlNavigation:'reload'})],
+  imports: [RouterModule.forRoot(routes, {onSameUrlNavigation:'ignore'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
